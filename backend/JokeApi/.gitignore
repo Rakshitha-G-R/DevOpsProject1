@@ -1,0 +1,41 @@
+# === .NET / C# ===
+bin/
+obj/
+*.user
+*.vspscc
+*.vssscc
+.vs/
+*.dbmdl
+*.log
+*.DS_Store
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ASP.NET secrets
+**/secrets.json
+
+# Build output
+wwwroot/
+
+# === Node / React ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+dist/
+build/
+
+# React environments
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# === IDE settings ===
+.idea/
+.vscode/
+
+# === macOS ===
+.DS_Store
