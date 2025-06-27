@@ -17,11 +17,11 @@ builder.Services.AddCors();
 
 var app=builder.Build();
 
-app.UseHttpsRedirection();
-// app.UseCors(cors=>cors.WithOrigins("Frontend URL").AllowAnyMethod().AllowAnyHeader());
-app.UseCors(cors=>cors.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+app.UseCors(cors=>cors.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader());
+// app.UseCors(cors=>cors.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
 // app.UseAuthorization();
+app.UseHttpsRedirection();
 app.MapControllers();
 
 app.Run();
