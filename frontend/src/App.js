@@ -7,7 +7,7 @@ function App() {
   const[joke,setJoke]=useState('');
 
   const fetchJoke=async()=>{
-    const res=await fetch("http://localhost:5212/api/jokes/random");
+    const res=await fetch("http://localhost:8080/api/jokes/random");
     const data=await res.json();
     setJoke(data.text);
   }
